@@ -1,55 +1,57 @@
+
 # 🛒 E-Commerce Web Application (JSP + Servlet + MySQL)
 
-This is a simple *E-Commerce web application* built using *Java (JSP/Servlets), **MySQL, and **Tomcat*.  
-It allows users to register, login, browse products, add to cart, place orders, and view their order history.  
-Admins can manage products, users, and orders from an admin dashboard.
+This project is a lightweight **E-Commerce platform** developed using **Java technologies (JSP/Servlets)**, backed by **MySQL** and deployed on **Apache Tomcat**.  
+It enables users to create accounts, explore products, manage their shopping cart, place orders, and track their purchases.  
+Administrators have access to a control panel to oversee product listings, user accounts, and order statuses.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Functionalities
 
-### 👤 User
-- Register and Login
-- Browse Products by category
-- Add / Remove / Update Cart Items
-- Checkout and Place Orders
-- View Order History
-- Logout
+### 👤 User Module
+- Account Registration and Authentication  
+- Product Browsing by Category  
+- Cart Management (Add, Edit, Remove Items)  
+- Order Placement and Checkout  
+- View Past Orders  
+- Secure Logout
 
-### 🛠 Admin
-- Dashboard with statistics
-- Manage Products (Add, Delete)
-- Manage Users (Delete)
-- Manage Orders (Update status)
-
----
-
-## 🛠 Tech Stack
-- *Frontend:* JSP, JSTL, HTML, CSS (basic styling)
-- *Backend:* Java Servlets
-- *Database:* MySQL 8+
-- *Server:* Apache Tomcat 8.5 / 9
-- *IDE:* NetBeans / Eclipse
+### 🛠 Admin Module
+- Overview Dashboard with Key Metrics  
+- Product Management (Add/Delete Products)  
+- User Management (Remove Users)  
+- Order Tracking and Status Updates
 
 ---
 
-## 📂 Project Structure
+## 🧰 Technology Stack
+- **Frontend:** JSP, JSTL, HTML, CSS (minimal styling)  
+- **Backend:** Java Servlets  
+- **Database:** MySQL 8+  
+- **Server:** Apache Tomcat 8.5 / 9  
+- **IDE:** NetBeans or Eclipse
 
+---
+
+## 📁 Project Layout
+
+```
 Ecommerce/
 │── src/java/
-│ ├── DB/ # Database helper classes (UserDB, ProductDB, CartDB, OrderDB, DBconnection)
-│ ├── model/ # POJOs (User, Product, Cart, CartItem, Order, OrderItem)
-│ └── servlet/ # Servlets (ProductServlet, CartServlet, CheckoutServlet, OrderServlet, AdminServlet)
-│ └── Auth/ # Auth Servlets (LoginServlet, RegisterServlet, LogoutServlet)
+│   ├── DB/           # Database access classes (UserDB, ProductDB, CartDB, OrderDB, DBconnection)
+│   ├── model/        # Java Beans (User, Product, Cart, CartItem, Order, OrderItem)
+│   ├── servlet/      # Core Servlets (ProductServlet, CartServlet, CheckoutServlet, OrderServlet, AdminServlet)
+│   └── Auth/         # Authentication Servlets (LoginServlet, RegisterServlet, LogoutServlet)
 │
 │── web/
-│ ├── index.jsp # Home Page
-│ ├── login.jsp # User Login
-│ ├── register.jsp # User Registration
-│ ├── products.jsp # Product Listing
-│ ├── cart.jsp # Shopping Cart
-│ ├── checkout.jsp # Checkout
-│ ├── orders.jsp # My Orders
-│ └── admin/ # Admin JSPs (dashboard.jsp, manageProducts.jsp, manageUsers.jsp, manageOrders.jsp)
+│   ├── index.jsp         # Landing Page
+│   ├── login.jsp         # Login Interface
+│   ├── register.jsp      # Sign-Up Page
+│   ├── products.jsp      # Product Display
+│   ├── cart.jsp          # Cart Overview
+│   ├── checkout.jsp      # Finalize Purchase
+│   ├── orders.jsp        # User Order History
+│   └── admin/            # Admin Pages (dashboard.jsp, manageProducts.jsp, manageUsers.jsp, manageOrders.jsp)
 │
-└── pom.xml (if using Maven) / Project Properties (NetBeans)
+└── pom.xml / Project Properties (NetBeans)
